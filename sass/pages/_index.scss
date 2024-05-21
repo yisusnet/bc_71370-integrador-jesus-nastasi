@@ -1,0 +1,25 @@
+:root{
+    --amarillo-1: #EBDE23;
+    --verde-1: #19B028;
+    --rojo-1:#E60901;
+    --amarillo-2: #EBC000;
+}
+
+.section-cards {
+    background-color: var(--rojo-1);
+    border: 0.15rem solid var(--verde-1);
+    padding: 1rem;
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+
+

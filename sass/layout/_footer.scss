@@ -1,0 +1,40 @@
+:root {
+  --amarillo-1: #ebde23;
+  --verde-1: #19b028;
+  --rojo-1: #e60901;
+  --amarillo-2: #ebc000;
+}
+
+.footer-header {
+  display: flex;
+  border-top: none;
+  background-color: #19b028;
+  max-height: 20rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  justify-content: space-around;
+
+  &__logo-container {
+    width: 20rem;
+    max-width: 30rem;
+    height: 10rem;
+    max-height: 12rem;
+  }
+
+  &__image-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5rem;
+  }
+
+  &__link-footer {
+    text-align: justify;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+}

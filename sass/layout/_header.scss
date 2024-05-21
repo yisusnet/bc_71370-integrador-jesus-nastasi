@@ -1,0 +1,119 @@
+:root {
+  --amarillo-1: #ebde23;
+  --verde-1: #19b028;
+  --rojo-1: #e60901;
+  --amarillo-2: #ebc000;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu {
+  display: none;
+}
+
+.nav-bar {
+  background-color: var(--verde-1);
+
+  &__nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    flex-wrap: wrap;
+  }
+
+  &__nav-item {
+    background-color: var(--rojo-1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+    border: 0.2rem solid white;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    background-color: var(--rojo-1);
+    color: white;
+    display: inline-block;
+    font-weight: 700;
+  }
+}
+
+.search-bar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+
+
+  &__logo-container {
+    border-bottom: 0.2rem solid var(--verde-1);
+    border-top: 0.2rem solid var(--verde-1);
+    border-right: 0.2rem solid var(--verde-1);
+    width: 10rem;
+
+}
+    &__image-logo{    height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+
+  &__form-container {
+    padding: 0.5rem;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    border-bottom: 0.2rem solid var(--verde-1);
+    border-top: 0.2rem solid var(--verde-1);
+  }
+
+  &__form-label {
+    background-color: var(--rojo-1);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    margin-right: 0.25rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid var(--verde-1);
+    font-weight: 600;
+    font-size:1rem;
+  }
+
+  &__form-search {
+    background-color: var(--rojo-1);
+    color: white;
+    width: 60%;
+    font-weight: 500;
+    border: 0.2rem solid var(--verde-1);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  &__form-submit {
+    background-color: var(--rojo-1);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 0.2rem solid var(--verde-1);
+    margin-left: 0.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &__carrito-container {
+    flex: 0 0 3rem; /* shorthand (grow shrink basis */
+
+    border-bottom: 0.2rem solid var(--verde-1);
+    border-top: 0.2rem solid var(--verde-1);
+    border-left: 0.2rem solid var(--verde-1);
+  }
+
+}
