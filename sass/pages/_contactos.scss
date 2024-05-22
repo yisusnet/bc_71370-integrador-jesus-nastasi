@@ -4,3 +4,36 @@
   --rojo-1: #e60901;
   --amarillo-2: #ebc000;
 }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+
+    &__form-whatsapp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    &__form{
+        padding:1rem;
+        margin: 1rem;
+    }
+
+    &__whatsapp{
+        padding:1rem;
+        margin: 1rem;
+    }
+
+    &__h1{display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+
+    }
+
+    &__header{
+        background-color:var(--rojo-1);
+    }
+}
+
