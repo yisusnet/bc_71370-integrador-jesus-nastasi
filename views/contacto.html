@@ -35,7 +35,7 @@
       <div class="search-bar">
         <div class="search-bar__logo-container">
           <img
-            src="/img/logo-nico.jpg"
+            src="/img/logo-nico.webp"
             class="search-bar__image-logo"
             alt="Logo logo nico"
           />
@@ -70,6 +70,7 @@
               <div class="contact__label-input">
                 <label for="Nombres" class="contact__label">Nombre:</label>
                 <input
+                name="Nombres"
                   id="Nombres"
                   type="text"
                   class="contact__input"
@@ -80,11 +81,10 @@
               <div class="contact__label-input">
                 <label for="Apellidos" class="contact__label">Apellidos:</label>
                 <input
+                name="Apellidos"
                   id="Apellidos"
                   type="text"
                   class="contact__input"
-                  value="Apellidos"
-                  
                   required
                 />
               </div>
@@ -102,12 +102,21 @@
               <div class="contact__label-input">
                 <label for="Telefono" class="contact__label">Telefono:</label>
                 <input
+                name="Telefono"
                   id="Telefono"
                   type="text"
                   class="contact__input"
                   required
                 />
               </div>
+              <div class="contact__textarea-label">
+              <label for="Comentarios">Comentarios</label>
+              <textarea name="Comentarios" id="Comentarios" class="contact__textarea" placeholder="Comentanos" required></textarea>
+
+              <div class="contact__button">
+                <button class="contact__button-enviar">Enviar</button>
+              </div>
+
             </fieldset>
           </form>
         </div>
@@ -128,7 +137,7 @@
       <div class="footer-header">
         <div class="footer-header__logo-container">
           <img
-            src="/img/logo-nico.jpg"
+            src="/img/logo-nico.webp"
             class="footer-header__image-logo"
             alt="logo-nico"
           />
