@@ -8,6 +8,9 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #menu {
@@ -15,7 +18,10 @@
 }
 
 .nav-bar {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   background-color: var(--verde-1);
+  border-bottom: 0.3rem solid white;
 
   &__nav-list {
     display: flex;
@@ -44,47 +50,50 @@
 }
 
 .search-bar {
+  position: fixed;
+  top: 3.86rem;
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-around;
   height: 5rem;
+  transition: opacity 0.2s ease, visibility 5s ease;
+  opacity: 3;
+  visibility: visible;
 
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
 
   &__logo-container {
-    border-bottom: 0.2rem solid var(--verde-1);
-    border-top: 0.2rem solid var(--verde-1);
-    border-right: 0.2rem solid var(--verde-1);
+    height: 100;
     width: 10rem;
-
-}
-    &__image-logo{    height: 100%;
-        width: 100%;
-        object-fit: cover;
-
-    }
-
+  }
+  &__image-logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
   &__form-container {
     padding: 0.5rem;
     display: flex;
     flex-basis: 100%;
     justify-content: center;
-    border-bottom: 0.2rem solid var(--verde-1);
-    border-top: 0.2rem solid var(--verde-1);
   }
 
   &__form-label {
     background-color: var(--rojo-1);
     color: white;
     border-radius: 0.5rem;
-    padding: 0.5rem 2rem;
-    margin-right: 0.25rem;
-    font-size: 0.7rem;
+    padding: 0rem 0.8rem;
+    margin-right: 0.3rem;
     display: flex;
     align-items: center;
     border: 0.2rem solid var(--verde-1);
     font-weight: 600;
-    font-size:1rem;
+    font-size: 0.9rem;
   }
 
   &__form-search {
@@ -109,11 +118,45 @@
   }
 
   &__carrito-container {
-    flex: 0 0 3rem; /* shorthand (grow shrink basis */
+    flex: 0 0 3rem;
+  }
+}
 
-    border-bottom: 0.2rem solid var(--verde-1);
-    border-top: 0.2rem solid var(--verde-1);
-    border-left: 0.2rem solid var(--verde-1);
+.menu-toogle {
+  display: none;
+  background-color: red;
+  flex: 0 0 3.5rem;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+
+  &__label {
+    display: flex;
+    background-color: var(--rojo-1);
+    border: 0.21rem solid var(--verde-1);
+    height: 100%;
   }
 
+  &__top-bread,
+  &__meat,
+  &__bottom-bread {
+    display: block;
+    background-color: white;
+    height: 0.5rem;
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+
+  &__top-bread {
+    top: 0.8rem;
+  }
+
+  &__meat {
+    top: 50%;
+    margin-top: -0.25rem;
+  }
+  &__bottom-bread {
+    bottom: 0.8rem;
+  }
 }

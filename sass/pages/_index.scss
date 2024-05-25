@@ -17,11 +17,11 @@
         border-bottom-left-radius: 15rem;
         border-bottom-right-radius:15rem;
         position: fixed;
-        top: 8.5rem;
+        top: 8.85rem;
         width: 100%;
-        transition: opacity 1s ease, visibility 5s ease; /* Transición suave añadida */
-        opacity: 3; /* Asegurarse de que la opacidad esté al máximo cuando sea visible */
-        visibility: visible; /* Asegurarse de que la visibilidad esté en visible cuando sea visible */
+        transition: opacity 0.2s ease, visibility 5s ease;
+        opacity: 3; 
+        visibility: visible;
       
  
 
