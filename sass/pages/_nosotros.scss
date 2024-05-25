@@ -5,3 +5,47 @@
     --amarillo-2: #EBC000;
 }
 
+
+.nosotros{   
+    background: linear-gradient(to right, #00ff00, #ffffff, #ff0000);
+    padding-top: 15rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &__header{
+        background-color:var(--rojo-1);
+        position: fixed;
+        top: 8.85rem;
+        width: 100%;
+        border-bottom-left-radius: 15rem;
+        border-bottom-right-radius:15rem;
+        transition: opacity 0.2s ease, visibility 5s ease; 
+        opacity: 3; 
+        visibility: visible; 
+
+    }
+    &__header.hidden{
+        visibility: hidden;
+        opacity: 0; 
+    }
+
+
+      
+  
+
+    &__h1{
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+
+    }
+
+    &__image{
+        width: 10rem;
+    }
+
+}
+
