@@ -12,6 +12,7 @@
 
     display: flex;
     flex-direction: column;
+    padding-bottom: 6rem;
 
     &__header{
         background-color:var(--rojo-1);
@@ -30,10 +31,6 @@
         opacity: 0; 
     }
 
-
-      
-  
-
     &__h1{
             color: white;
             padding: 1rem;
@@ -43,9 +40,91 @@
 
     }
 
-    &__image{
-        width: 10rem;
+    &__sobre-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
+
+    &__h2-p{
+        width: 80%;
+        text-align:center;
+        background-color: var(--verde-1);
+        border: 0.5rem solid white;
+        border-radius: 0.8rem;
+        color: white;
+        padding: 1rem;
+ 
+
+    }
+
+    &__h2{
+        font-size: 1.8rem;
+
+    }
+
+
+
+    &__h2-image{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        width: 80%;
+        text-align:center;
+        background-color: var(--verde-1);
+        border: 0.5rem solid white;
+        border-radius: 0.8rem;
+        color: white;
+        padding: 1.5rem;
+
+
+    }
+
+
+    &__team-member{
+        width: 30rem;
+        height: 16rem;
+        border-radius: 1rem;
+        margin: 0.5rem;
+        
+        
+    }
+
+    &__p-pie-de-foto{
+        font-size: 0.65rem;
+        margin-top: -0.5rem;
+    }
+
+    &__parrafo{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 0;
+        font-size: 1.2rem;    
+
+}
+
+        &__span{
+            color: var(--amarillo-1);
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            padding: 0.2rem;
+            
+        }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        border: solid 0.2rem var(--rojo-1);
+
+    }
+
+
 
 }
 
