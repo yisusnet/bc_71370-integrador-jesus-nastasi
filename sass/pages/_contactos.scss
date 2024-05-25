@@ -5,90 +5,166 @@
   --amarillo-2: #ebc000;
 }
 
+.contact {
+  &__header {
+    background-color: var(--rojo-1);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 8.85rem;
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+    transition: opacity 0.2s ease, visibility 5s ease; 
+  }
 
+  &__header.hidden {
+    visibility: hidden; 
+    opacity: 0; 
+    position: fixed; 
+    top: -15rem;
+  
+ 
 
-.contact{
+  }
 
-    &__header{
-        background-color:var(--rojo-1);
-        display: flex;
-        justify-content: center;
-    }
+  &__header-h1-iconos {
+    display: flex;
+    flex-direction: row;
+  }
 
+  &__h1-contactanos {
+    color: white;
+    padding-top: 0.6em;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-right: 2rem;
 
-    &__header-h1-iconos{  
-         display: flex;
-         flex-direction: row;
-    }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 
-        &__h1-contactanos{
-            color: white;
-            padding-top:0.6em;
-            padding-bottom: 1rem;
-            font-size: 1.8rem;
-            margin-right: 2rem;
+  &__redes-sociales {
+    width: 3.5rem;
+    transition: 0.4s;
+  }
 
-            padding-left:0.5rem ;
-            padding-right: 0.5rem;
-    }
-    
-        &__redes-sociales{
-            width: 3.5rem;
-            transition: .4s;
+  &__redes-sociales:hover {
+    transform: scale(1.15);
+    background-color: var(--verde-1);
+  }
 
-        }
+  &__link-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.43rem;
+  }
 
+  &__svg {
+    fill: white;
+    width: 1.8rem;
+  }
 
-        &__redes-sociales:hover{
-            transform: scale(1.15);
-            background-color: var(--verde-1);
+  &__svg:hover {
+    fill: var(--rojo-1);
+  }
 
-        }
-    
-        &__link-svg{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height:4.43rem;
+  &__svg-h1 {
+    fill: white;
+    display: inline;
+    width: 1.5rem;
+  }
 
+  &__form-whatsapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem;
+    height: 45.5rem;
+    background: linear-gradient(to right, #00ff00, #ffffff, #ff0000);
+    padding-top: 15rem;
+  }
 
-        }
+  &__form {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    background-color: var(--rojo-1);
+    border-radius: 5%;
+    color: white;
+  }
+  &__form-1 {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
 
-        &__svg{
-            fill: white;
-            width: 1.8rem;
-            
-    
-        }
+  &__fieldset {
+    border: none;
+    width: 100%;
+  }
 
-        &__svg:hover{
-            fill: var(--rojo-1);
-        }
-        
-        &__svg-h1{fill: white;
-            display: inline;
-            width: 1.5rem;
-        }
+  &__label-input {
+    background-color: var(--verde-1);
+    border-radius: 0.88rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  &__label {
+    margin: 0.2rem;
+    margin-left: 1rem;
+    padding: 0.2rem;
+  }
 
+  &__input {
+    border-radius: 0.5rem;
+    width: 60%;
+    margin-right: rem;
+    height: 1.5rem;
+  }
 
-    &__form-whatsapp{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 2rem;
-    }
+  &__textarea-label {
+    background-color: var(--verde-1);
+    border-radius: 0.88rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__form{
-        padding:1rem;
-        margin: 1rem;
-    }
+  &__textarea {
+    height: 5rem;
+    border-radius: 0.5rem;
+  }
 
-    &__whatsapp{
-        padding:1rem;
-        margin: 1rem;
-    }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
 
+  &__button-enviar {
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: 0.2rem solid var(--verde-1);
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 
-
+  &__whatsapp {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+  }
 }
