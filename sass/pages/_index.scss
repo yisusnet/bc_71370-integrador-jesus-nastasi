@@ -6,9 +6,30 @@
 }
 
 .section-cards {
-    background-color: var(--rojo-1);
-    border: 0.15rem solid var(--verde-1);
-    padding: 1rem;
+    background: linear-gradient(to right, rgba(0, 255, 0, 0.65), rgba(255, 255, 255, 0.65), rgba(255, 0, 0, 0.65));
+
+
+
+    &__header{
+        background-color: var(--rojo-1);
+        color:white;
+        text-align: center;
+        border-bottom-left-radius: 15rem;
+        border-bottom-right-radius:15rem;
+        position: fixed;
+        top: 8.5rem;
+        width: 100%;
+        transition: opacity 1s ease, visibility 5s ease; /* Transición suave añadida */
+        opacity: 3; /* Asegurarse de que la opacidad esté al máximo cuando sea visible */
+        visibility: visible; /* Asegurarse de que la visibilidad esté en visible cuando sea visible */
+      
+ 
+
+    }
+       &__header.hidden {
+  visibility: hidden;
+  opacity: 0; 
+}
 
 }
 
@@ -18,8 +39,18 @@
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
+    padding-top: 15rem;
+    
 
 }
 
 
+h1{padding: 0.4rem;
+
+}
+
+p{padding: 0.4rem;
+
+
+}
 

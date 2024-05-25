@@ -62,7 +62,7 @@
     <main>
       <section class="section-cards">
         <header class="section-cards__header">
-          <h1>MENU</h1>
+          <h1> Nuestro MENU</h1>
           <p>Se encontraron las siguientes pizzas</p>
         </header>
 
@@ -269,6 +269,24 @@
       </div>
     </footer>
     <!-- footer final-->
+
+    <script>
+       
+        let lastScrollTop = 0;
+    
+        window.addEventListener("scroll", function() {
+          let st = window.pageYOffset || document.documentElement.scrollTop;
+    
+          if (st > lastScrollTop) {
+           
+            document.querySelector('.section-cards__header').classList.add('hidden');
+          } else {
+      
+            document.querySelector('.section-cards__header').classList.remove('hidden');
+          }
+          lastScrollTop = st <= 0 ? 0 : st; 
+        });
+      </script>
 
     <script type="module" src="/main.js"></script>
   </body>
