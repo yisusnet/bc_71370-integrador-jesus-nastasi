@@ -239,9 +239,9 @@
     border-radius: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-
     width: 8rem;
     gap: 0.5rem;
+    color: #25d366;
   }
 
   &__svg-whatsapp {
@@ -250,17 +250,21 @@
   }
 
   &__maps {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right, #00ff00, #ffffff, #ff0000);
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
   &__parrafo-direction {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: 600;
-
     margin-bottom: 2rem;
+    width: 40rem;
   }
 
   &__svg-maps {
@@ -268,7 +272,4 @@
     width: 1.8rem;
   }
 
-  __iframe-maps:hover {
-    background-color: white;
-  }
 }
