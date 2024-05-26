@@ -1,130 +1,110 @@
-:root{
-    --amarillo-1: #EBDE23;
-    --verde-1: #19B028;
-    --rojo-1:#E60901;
-    --amarillo-2: #EBC000;
+:root {
+  --amarillo-1: #ebde23;
+  --verde-1: #19b028;
+  --rojo-1: #e60901;
+  --amarillo-2: #ebc000;
 }
 
+.nosotros {
+  background: linear-gradient(to right, #00ff00, #ffffff, #ff0000);
+  padding-top: 15rem;
 
-.nosotros{   
-    background: linear-gradient(to right, #00ff00, #ffffff, #ff0000);
-    padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
 
+  &__header {
+    background-color: var(--rojo-1);
+    position: fixed;
+    top: 8.85rem;
+    width: 100%;
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+    transition: opacity 0.2s ease, visibility 5s ease;
+    opacity: 3;
+    visibility: visible;
+  }
+  &__header.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__h1 {
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  &__sobre-nosotros {
     display: flex;
     flex-direction: column;
-    padding-bottom: 6rem;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    &__header{
-        background-color:var(--rojo-1);
-        position: fixed;
-        top: 8.85rem;
-        width: 100%;
-        border-bottom-left-radius: 15rem;
-        border-bottom-right-radius:15rem;
-        transition: opacity 0.2s ease, visibility 5s ease; 
-        opacity: 3; 
-        visibility: visible; 
+  &__h2-p {
+    width: 80%;
+    text-align: center;
+    background-color: var(--verde-1);
+    border: 0.5rem solid white;
+    border-radius: 0.8rem;
+    color: white;
+    padding: 1rem;
+  }
 
-    }
-    &__header.hidden{
-        visibility: hidden;
-        opacity: 0; 
-    }
+  &__h2 {
+    font-size: 1.8rem;
+  }
 
-    &__h1{
-            color: white;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            font-size: 1.5rem;
+  &__h2-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    background-color: var(--verde-1);
+    border: 0.5rem solid white;
+    border-radius: 0.8rem;
+    color: white;
+    padding: 1.5rem;
+  }
 
-    }
+  &__team-member {
+    width: 30rem;
+    height: 16rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+  }
 
-    &__sobre-nosotros{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+  &__p-pie-de-foto {
+    font-size: 0.65rem;
+    margin-top: -0.5rem;
+  }
 
-    &__h2-p{
-        width: 80%;
-        text-align:center;
-        background-color: var(--verde-1);
-        border: 0.5rem solid white;
-        border-radius: 0.8rem;
-        color: white;
-        padding: 1rem;
- 
+  &__parrafo {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+    font-size: 1.2rem;
+  }
 
-    }
+  &__span {
+    color: var(--amarillo-1);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.2rem;
+  }
 
-    &__h2{
-        font-size: 1.8rem;
-
-    }
-
-
-
-    &__h2-image{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem;
-        padding: 1rem;
-        width: 80%;
-        text-align:center;
-        background-color: var(--verde-1);
-        border: 0.5rem solid white;
-        border-radius: 0.8rem;
-        color: white;
-        padding: 1.5rem;
-
-
-    }
-
-
-    &__team-member{
-        width: 30rem;
-        height: 16rem;
-        border-radius: 1rem;
-        margin: 0.5rem;
-        
-        
-    }
-
-    &__p-pie-de-foto{
-        font-size: 0.65rem;
-        margin-top: -0.5rem;
-    }
-
-    &__parrafo{
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 0;
-        font-size: 1.2rem;    
-
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    border: solid 0.2rem var(--rojo-1);
+  }
 }
-
-        &__span{
-            color: var(--amarillo-1);
-            font-size: 2rem;
-            display: flex;
-            justify-content: center;
-            padding: 0.2rem;
-            
-        }
-
-    &__image{
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem;
-        border: solid 0.2rem var(--rojo-1);
-
-    }
-
-
-
-}
-

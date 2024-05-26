@@ -6,6 +6,14 @@
 }
 
 .card {
+    transition: 0.2s ease;
+
+
+
+    &:hover{
+        transform:scale(1.01);
+        
+    }
   &__article {
     width: 17.75rem;
     max-width: 20rem;
