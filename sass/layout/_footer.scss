@@ -13,8 +13,8 @@
   padding-bottom: 1rem;
   padding-top: 1rem;
   border-top: 0.3rem solid white;
-
   justify-content: space-around;
+  gap: 0.5rem;
 
   &__logo-container {
     width: 20rem;
@@ -32,10 +32,22 @@
 
   &__link-footer {
     text-align: justify;
+    transition: 0.2s ease;
+    
+  }
+
+  &__link-footer:hover {
+    transform: scale(1.1);
+
   }
 
   &__link {
     text-decoration: none;
     color: white;
+  }
+
+  &__h3{
+    color: white;
+    font-size: 1.5rem;
   }
 }
