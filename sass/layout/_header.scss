@@ -119,7 +119,10 @@
   }
 
   &__carrito-container {
-    flex: 0 0 3rem;
+    flex: 0 0 3.5rem;
+    align-self: center;
+    justify-self: center;
+    
   }
 }
 
