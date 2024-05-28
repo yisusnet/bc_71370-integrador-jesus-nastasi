@@ -6,12 +6,12 @@
 }
 
 .nosotros {
-  background: linear-gradient(to right, #00ff00, #ffffff, #ff0000);
-  padding-top: 15rem;
 
+  padding-top: 15rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+  
 
   &__header {
     background-color: var(--rojo-1);
