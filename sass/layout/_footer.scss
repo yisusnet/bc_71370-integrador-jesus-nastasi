@@ -53,3 +53,41 @@
     font-size: 1.5rem;
   }
 }
+
+
+@media (max-width: 576px){
+
+    .footer-header {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        border-top: 0.2rem solid white;
+        gap: 0.35rem;
+      
+        
+      
+        &__logo-container {
+          width: 10rem;
+          max-width: 20rem;
+          height: 7rem;
+          max-height: 12rem;
+          align-self: center;
+          padding: 0.45rem;
+        }
+      
+        &__link-footer {
+          font-size: 0.55rem;
+          
+        }
+      
+        &__link {
+          text-decoration: none;
+          color: white;
+        }
+      
+        &__h3{
+          color: white;
+          font-size: 0.9rem;
+        }
+      }
+
+}
