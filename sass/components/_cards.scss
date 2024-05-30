@@ -6,12 +6,12 @@
 }
 
 .card {
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 
 
 
     &:hover{
-        transform:scale(1.01);
+        transform: scale(1.01) ;
         
     }
   &__article {
@@ -29,6 +29,12 @@
     margin-bottom: 1rem;
   }
 
+  &__article:hover{
+    background-color: var(--rojo-1);
+
+
+  }
+  
   &____image-container {
     color: white;
   }
@@ -37,36 +43,44 @@
     width: 16rem;
     max-width: 300px;
     height: 16.62rem;
-    background-color: var(--verde-1);
     padding: 1rem 1rem;
     border-radius: 1.5rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  &__image:hover{
+    background-color: var(--rojo-1);
+  }
+
 }
 
 @media (max-width: 576px){
 
     .card{
 
+        
         &__content{
-            width: 40%;
-            text-align: justify;
+            width: 45%;
+            text-align: start;
             align-self: center;
             padding-left: 0.4rem;
+            position: relative;
+            right: 0.4rem;
             
         }
 
         &__article {
             display: flex;
-            width: 16.75rem;
-            height: 10rem;
+            width: 12.75rem;
+            height: 8rem;
             margin: 0;
             margin-bottom: 0.5rem;
-            font-size: 0.65rem;
+            font-size: 0.45rem;
             border: 0.3rem solid white;
-            gap:0.2rem
+            gap:0.2rem;
+            margin-left:0.3rem;
           }
         
           &____image-container {
@@ -74,7 +88,6 @@
           }
         
           &__image {
-            background-color: var(--verde-1);
             padding: 0.3rem 0.3rem;
               width: 100%;
             height: 100%;
