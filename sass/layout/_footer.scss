@@ -16,8 +16,6 @@
   justify-content: space-around;
   gap: 0.5rem;
 
-  
-
   &__logo-container {
     width: 20rem;
     max-width: 30rem;
@@ -35,12 +33,10 @@
   &__link-footer {
     text-align: justify;
     transition: 0.2s ease;
-    
   }
 
   &__link-footer:hover {
     transform: scale(1.1);
-
   }
 
   &__link {
@@ -48,79 +44,67 @@
     color: white;
   }
 
-  &__h3{
+  &__h3 {
     color: white;
     font-size: 1.5rem;
   }
 }
 
+@media (max-width: 576px) {
+  .footer-header {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 0.2rem solid white;
+    gap: 0.35rem;
 
-@media (max-width: 576px){
+    &__logo-container {
+      width: 10rem;
+      max-width: 20rem;
+      height: 7rem;
+      max-height: 12rem;
+      align-self: center;
+      padding: 0.45rem;
+    }
 
-    .footer-header {
-        padding-left:0.5rem ;
-        padding-right:0.5rem;
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
-        border-top: 0.2rem solid white;
-        gap: 0.35rem;
-      
-        
-      
-        &__logo-container {
-          width: 10rem;
-          max-width: 20rem;
-          height: 7rem;
-          max-height: 12rem;
-          align-self: center;
-          padding: 0.45rem;
-        }
-      
-        &__link-footer {
-          font-size: 0.55rem;
-          
-        }
-      
-        &__link {
-          text-decoration: none;
-          color: white;
-        }
-      
-        &__h3{
-          color: white;
-          font-size: 0.9rem;
-        }
-      }
+    &__link-footer {
+      font-size: 0.55rem;
+    }
 
+    &__link {
+      text-decoration: none;
+      color: white;
+    }
+
+    &__h3 {
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
 }
 
+@media (max-width: 400px) {
+  .footer-header {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
 
-@media (max-width: 400px){
+    &__logo-container {
+      width: 7rem;
+      max-width: 10rem;
+      height: 5rem;
+      max-height: 7rem;
+    }
 
-    .footer-header {
-        padding-left:0.3rem ;
-        padding-right:0.3rem;
-        padding-bottom: 0.3rem;
-        padding-top: 0.3rem;
-      
-        
-      
-        &__logo-container {
-          width: 7rem;
-          max-width: 10rem;
-          height: 5rem;
-          max-height: 7rem;
-        }
-      
-        &__link-footer {
-          font-size: 0.4rem;
-          
-        }
-      
-        &__h3{
-          color: white;
-          font-size: 0.6rem;
-        }
-      }
+    &__link-footer {
+      font-size: 0.4rem;
+    }
 
+    &__h3 {
+      color: white;
+      font-size: 0.6rem;
+    }
+  }
 }
