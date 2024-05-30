@@ -93,3 +93,34 @@
       }
 
 }
+
+
+@media (max-width: 400px){
+
+    .footer-header {
+        padding-left:0.3rem ;
+        padding-right:0.3rem;
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
+      
+        
+      
+        &__logo-container {
+          width: 7rem;
+          max-width: 10rem;
+          height: 5rem;
+          max-height: 7rem;
+        }
+      
+        &__link-footer {
+          font-size: 0.4rem;
+          
+        }
+      
+        &__h3{
+          color: white;
+          font-size: 0.6rem;
+        }
+      }
+
+}

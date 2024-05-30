@@ -189,3 +189,67 @@
 
     
 }
+
+
+
+@media (max-width: 400px) {
+
+    .nosotros {
+      
+        
+
+        &__h1 {
+          padding: 0.6rem;
+          font-size: 0.6rem;
+        }
+      
+        &__sobre-nosotros {
+          gap: 0.5rem;
+
+        }
+      
+        &__h2-p {
+          border: 0.25rem solid white;
+          border-radius: 0.45rem;
+          padding: 0.25rem;
+        }
+      
+        &__h2 {
+          font-size: 0.65rem;
+        }
+      
+        &__h2-image {
+          margin: 0.3rem;
+          width: 80%;
+          border: 0.25rem solid white;
+          border-radius: 0.45rem;
+          padding: 0.3rem;
+        }
+      
+        &__team-member {
+          height: 4rem;
+          margin: 0.3rem;
+        }
+      
+        &__p-pie-de-foto {
+          font-size: 0.3rem;
+          margin-top: -0.18rem;
+        }
+      
+        &__parrafo {
+          font-size: 0.5rem;
+        }
+      
+        &__span {
+          font-size: 0.9rem;
+        }
+      
+        &__image {
+          border-radius: 0.5rem;
+          border: solid 0.1rem var(--rojo-1);
+        }
+      }
+
+
+    
+}
