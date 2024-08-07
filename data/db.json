@@ -1,0 +1,47 @@
+{
+    "productos": [
+      { "id": 1,
+       "nombre": "Margarita 30cm",
+        "descripcion": "Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarella, albahaca." , 
+        "foto": "img/margarita.webp"},
+
+        { "id": 2,
+        "nombre": "Napolitana 30cm",
+         "descripcion": "  Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarella, tomate (corte media luna), ajo , queso parmesano, albahaca." , 
+         "foto": "img/napolitana.webp"},
+         { "id": 3,
+       "nombre": "Pepperoni 30cm",
+        "descripcion": "Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarella, doble ración de pepperoni." , 
+        "foto": "img/pepperoni.webp"},
+        { "id": 4,
+       "nombre": "Quattro Formaggi 30cm",
+        "descripcion": " Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarella, queso mantecoso, queso parmesano, queso roquefort." , 
+        "foto": "img/quattro-formaggi.webp"},
+        { "id": 5,
+        "nombre": "Vegetariana 30cm",
+         "descripcion": " Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarella,  pimenton, champiñones, aceitunas negras." , 
+         "foto": "/img/vegetariana.webp"},
+         { "id": 6,
+         "nombre": "Hawaiana 30cm",
+          "descripcion": "Masa Artesanal, Salsa de tomate al estilo italiano, Queso Mozzarella, piña en trozos, jamón cocido." , 
+          "foto": "/img/pizza-hawaiana.webp"},
+          { "id": 7,
+          "nombre": "Quattro staggioni 30cm",
+           "descripcion": " Masa Artesanal, Salsa de tomate al estilo italiano, queso mozzarella, 4 estaciones a eleccion." , 
+           "foto": "/img/quattro-staggioni.webp"},
+           { "id": 9,
+           "nombre": "2x pepperoni pizza 30Cm + Bebida 1.5litros",
+            "descripcion": " 2x pepperoni pizza 30Cm + Bebida 1.5litros a elección!." , 
+            "foto": "/img/2-pepperoni-1-bebida-1.5L.webp"},
+            { "id": 10,
+            "nombre": "coca cola lata 350ml",
+             "descripcion": "Bebida gaseosa con azucar añadida." , 
+             "foto": "/img/coca-lata-350ml.webp"},
+             { "id": 10,
+             "nombre": "coca cola 1.5 Litros",
+              "descripcion": "Bebida gaseosa con azucar añadida 1.5 Litros." , 
+              "foto": "/img/coca-original-1.5L.webp"}
+            
+    ]
+    
+  }
