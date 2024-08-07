@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 comentario: comentariosInput.value.trim() 
             };
             console.log(data);
+            form.reset();
         } else {
             console.log('Los inputs no tienen información, no enviar el formulario');
         }
