@@ -126,7 +126,7 @@
 
         <div class="contact__form">
             
-          <form action="#" class="contact__form-1" method="get">
+          <form action="#" class="contact__form-1" method="get" id="formularioContacto">
             <fieldset class="contact__fieldset">
               <div class="contact__label-input">
                 <label for="Nombres" class="contact__label">Nombre:</label>
@@ -137,6 +137,7 @@
                   class="contact__input"
                   required
                 />
+                <small data-error="Nombres-error"></small>
               </div>
 
               <div class="contact__label-input">
@@ -148,6 +149,7 @@
                   class="contact__input"
                   required
                 />
+                <small data-error="Apellidos-error"></small>
               </div>
 
               <div class="contact__label-input">
@@ -158,17 +160,20 @@
                   class="contact__input"
                   required
                 />
+                <small data-error="Correo-error"></small>
               </div>
 
               <div class="contact__label-input">
                 <label for="Telefono" class="contact__label">Telefono:</label>
                 <input
+                
                   name="Telefono"
                   id="Telefono"
                   type="text"
                   class="contact__input"
                   required
                 />
+                <small data-error="Telefono-error"></small>
               </div>
               <div class="contact__textarea-label">
                 <label for="Comentarios" class="contact__label">Comentarios</label>
@@ -180,7 +185,9 @@
                   placeholder=" Comentanos "
                   required
                 >
+              
                 </textarea>
+                <small data-error="Comentarios-error"></small>
               </div>
 
               <div class="contact__button">
