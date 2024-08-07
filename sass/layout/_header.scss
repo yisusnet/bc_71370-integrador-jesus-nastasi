@@ -78,6 +78,8 @@
   transition: opacity 0.2s ease, visibility 5s ease;
   opacity: 3;
   visibility: visible;
+  padding-right: 1rem;
+  padding-left: 1rem;
 
   &.hidden {
     visibility: hidden;
@@ -139,6 +141,7 @@
     flex: 0 0 3.5rem;
     align-self: center;
     justify-self: center;
+    
   }
 }
 
