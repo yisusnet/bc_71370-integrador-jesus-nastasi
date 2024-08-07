@@ -1,4 +1,5 @@
 import './sass/main.scss';
+import Handlebars from "handlebars";
 
 let lastScrollTop = 0;
 
@@ -22,3 +23,46 @@ window.addEventListener('scroll', function () {
   }
   lastScrollTop = st <= 0 ? 0 : st;
 });
+
+
+
+//const urlLocalHost8080 = 'http://localhost:8080/productos/'
+const urlMokApi = 'https://66b27b7e7fba54a5b7e9c087.mockapi.io/productos'
+
+const getProductos = async () => {
+ 
+    try {
+        const respuesta = await fetch ('templates/card.hbs')
+
+        if(!respuesta.ok) {
+            throw new Error ('no se pudo traer la plantilla ' + respuesta.status)
+        }
+         const plantilla = await respuesta.text()
+         const template = Handlebars.compile(plantilla)
+         const respuestaBack = await fetch(urlMokApi)
+
+         if ( !respuestaBack.ok ) {
+            throw new Error('Algo paso con los productos de pizza', respuestaBack.status)
+        }
+        const dataProductos = await respuestaBack.json()
+        const dataFinal = {productos : dataProductos}
+        const html = template(dataFinal)
+        const contenedorCards = document.querySelector('#contenedor-cards');
+        
+        if (contenedorCards) {
+          contenedorCards.innerHTML = html;
+        } /* else {
+        console.warn('El contenedor de cards no existe en esta página.');
+} */
+        
+
+        
+        
+    } catch (error) {console.error('algo salio mal' + error)
+        
+    }
+
+}
+
+window.addEventListener('DOMContentLoaded',  getProductos)
+
