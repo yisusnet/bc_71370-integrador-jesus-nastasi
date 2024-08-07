@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const soloNumeros = /^\d+$/;
 
         if (telefonoValue === '') {
-            telefonoError.innerText = 'El teléfono es obligatorio';
+            telefonoError.innerText = 'El teléfono es obligatorio, debe ingresar solo números';
         } else if (!soloNumeros.test(telefonoValue)) {
             telefonoError.innerText = 'Debe ingresar solo números';
         } else {
