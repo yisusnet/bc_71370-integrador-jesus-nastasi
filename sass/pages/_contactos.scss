@@ -5,6 +5,15 @@
   --amarillo-2: #ebc000;
 }
 
+
+small{
+   
+    color: red;
+    font-weight: 800;
+    padding: 0.2rem;
+    margin-left: 0.5rem
+}
+
 .contact {
   &__header {
     background-color: var(--rojo-1);
@@ -78,21 +87,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10rem;
-    padding: 2rem;
-    padding-top: 15rem;
+    gap: 12rem;
+    padding: 4rem;
+    padding-top: 18rem;
   }
 
   &__form {
     padding-right: 2rem;
     padding-bottom: 2rem;
     font-size: 1rem;
-    background-color: var(--rojo-1);
+    background-color: white;
     border-radius: 5%;
     color: white;
     width: 100vw;
-    max-width: 35rem;
-    max-height: 35rem;
+    max-width: 36rem;
+    max-height: 38rem;
   }
 
   &__form:focus-within {
@@ -103,7 +112,7 @@
     padding: 0.5rem;
     margin: 1rem;
     border-radius: 1rem;
-    background-color: white;
+    background-color:var(--verde-1);
     width: 100%;
     height: 100%;
     padding-bottom: 2.5rem;
@@ -124,7 +133,7 @@
   }
 
   &__label-input {
-    background-color: var(--verde-1);
+    background-color: white;
     border-radius: 0.88rem;
     padding: 0.75rem;
     margin-top: 0.5rem;
@@ -132,6 +141,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: black;
   }
 
   &__label {
@@ -151,11 +161,11 @@
 
   &__input:focus-within {
     background-color: rgba(128, 128, 128, 0.322);
-    color: white;
+    color:black;
   }
 
   &__textarea-label {
-    background-color: var(--verde-1);
+    background-color: white;
     border-radius: 0.88rem;
     padding: 0.5rem;
     padding-bottom: 1rem;
@@ -169,11 +179,12 @@
     border-radius: 0.5rem;
     font-size: 1.2rem;
     text-align: justify;
+    color:black
   }
 
   &__textarea:focus-within {
     background-color: rgba(128, 128, 128, 0.322);
-    color: white;
+    color:black;
   }
 
   &__button {
@@ -188,7 +199,7 @@
     border-radius: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    margin-top: -0.4rem;
+    margin-top: 0.5rem;
   }
 
   &__button-enviar:hover {
@@ -201,8 +212,8 @@
     margin: 1rem;
     width: 30rem;
     min-width: 25rem;
-    height: 32rem;
-    min-height: 28rem;
+    height: 35rem;
+    min-height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -210,24 +221,24 @@
   }
 
   &__whatsapp-image {
-    border: 0.5rem solid var(--rojo-1);
+    border: 1rem solid white;
     text-align: center;
-    width: 17rem;
-    background-color: var(--rojo-1);
-    border-radius: 50%;
+    width: 30rem;
+    background-color: white;
+    border-radius: 100%;
   }
 
   &__whatsapp-image-logo {
     width: 100%;
-    border-radius: 80%;
+    border-radius: 50%;
   }
 
   &__whatsapp-h2 {
     font-size: 3rem;
     color: var(--verde-1);
     background-color: white;
-    border-radius: 2rem;
-    padding: 0.5rem;
+    border-radius: 3rem;
+    padding: 2rem;
   }
 
   &__whatsapp-link {
@@ -235,18 +246,19 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-weight: 800;
-    border-radius: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    width: 8rem;
+    font-weight: 900;
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 10rem;
     gap: 0.5rem;
     color: #25d366;
   }
 
   &__svg-whatsapp {
     fill: #25d366;
-    width: 80%;
+    width: 90%;
+    padding: 0.5rem;
   }
 
   &__maps {
@@ -272,14 +284,21 @@
   }
 
   &__iframe {
-    width: 50rem;
+    width: 60rem;
     height: 30rem;
-    border: 1rem solid red;
+    border: 0.5rem solid white;
     border-radius: 4rem;
   }
 }
 
 @media (max-width: 576px) {
+
+
+    small{
+   
+        font-size: 0.3rem;
+    }
+
   .contact {
     margin-top: -8rem;
 
@@ -321,8 +340,9 @@
       padding-bottom: 0.5rem;
       border-radius: 2.5%;
       width: 60%;
-      min-height: 20rem;
+      min-height: 21rem;
       height: 1rem;
+      
     }
 
     &__form-1 {
@@ -390,7 +410,7 @@
     }
 
     &__whatsapp-image {
-      border: 0.2rem solid var(--rojo-1);
+      border: 0.2rem solid white;
       width: 8.5rem;
       border-radius: 50%;
     }
@@ -403,16 +423,15 @@
     &__whatsapp-h2 {
       font-size: 1rem;
       border-radius: 0.8rem;
-      padding: 0.3rem;
+      padding: 0.4rem;
     }
 
     &__whatsapp-link {
-      text-decoration: none;
       font-weight: 600;
       padding: 0.5rem;
-      width: 50%;
-      gap: 0.8rem;
-      font-size: 0.65rem;
+      width: 70%;
+      gap: 0.5rem;
+      font-size: 0.7rem;
     }
 
     &__svg-whatsapp {
@@ -423,11 +442,11 @@
       margin-top: -3rem;
     }
 
-    &__iframe {
-      width: 25rem;
-      height: 12rem;
-      border: 0.2rem solid red;
-      border-radius: 4rem;
+    &__iframe {      width: 25rem;
+        height: 12rem;
+        border: 0.5rem solid white;
+        border-radius: 4rem;
+
     }
 
     &__parrafo-direction {
@@ -443,6 +462,11 @@
 }
 
 @media (max-width: 400px) {
+
+    small{
+        font-size: 0.2rem;
+    }
+
   .contact {
     margin-top: -8.5rem;
 
@@ -512,12 +536,12 @@
     }
 
     &__label {
-      font-size: 0.6rem;
+      font-size: 0.4rem;
     }
 
     &__input {
       height: 1.1rem;
-      font-size: 0.6rem;
+      font-size: 0.5rem;
     }
 
     &__textarea-label {
@@ -548,27 +572,33 @@
     }
 
     &__whatsapp-image {
-      width: 8.5rem;
-      border-radius: 50%;
-    }
-
-    &__whatsapp-h2 {
-      font-size: 1rem;
-      border-radius: 0.7rem;
-      padding: 0.4rem;
-    }
-
-    &__whatsapp-link {
-      font-weight: 500;
-      padding-top: 0.5rem;
-      width: 50%;
-      gap: 0.5rem;
-      font-size: 0.5rem;
-    }
-
-    &__svg-whatsapp {
-      width: 70%;
-    }
+        border: 0.2rem solid white;
+        width: 8.5rem;
+        border-radius: 50%;
+      }
+  
+      &__whatsapp-image-logo {
+        width: 100%;
+        border-radius: 50%;
+      }
+  
+      &__whatsapp-h2 {
+        font-size: 1rem;
+        border-radius: 0.8rem;
+        padding: 0.4rem;
+      }
+  
+      &__whatsapp-link {
+        font-weight: 600;
+        padding: 0.35rem;
+        width: 70%;
+        gap: 0.5rem;
+        font-size: 0.7rem;
+      }
+  
+      &__svg-whatsapp {
+        width: 50%;
+      }
 
     &__maps {
       margin-top: -4rem;
@@ -577,7 +607,7 @@
     &__iframe {
       width: 19rem;
       height: 10rem;
-      border: 0.15rem solid red;
+      border: 0.35rem solid white;
       border-radius: 3.5rem;
     }
 
