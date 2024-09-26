@@ -37,7 +37,7 @@ const getProductos = async () => {
         }
         const plantilla = await respuesta.text();
         const template = Handlebars.compile(plantilla);
-        const respuestaBack = await fetch(urlMokApi);
+        const respuestaBack = await fetch(urlLocalHost8080);
         if (!respuestaBack.ok) {
             throw new Error('Algo pasó con los productos de pizza: ' + respuestaBack.status);
         }
