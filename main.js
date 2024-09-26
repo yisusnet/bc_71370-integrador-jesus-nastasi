@@ -26,8 +26,8 @@ window.addEventListener('scroll', function () {
 
 //! peticion ASYNC MOCKAPI
 
-//const urlLocalHost8080 = 'http://localhost:8080/productos/'
-const urlMokApi = 'https://66b27b7e7fba54a5b7e9c087.mockapi.io/productos'
+const urlLocalHost8080 = 'http://localhost:8080/productos/'
+//const urlMokApi = 'https://66b27b7e7fba54a5b7e9c087.mockapi.io/productos'
 
 const getProductos = async () => {
     try {
